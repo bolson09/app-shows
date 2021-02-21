@@ -1,7 +1,7 @@
 # Proyecto Realizado con React
 
 
-## Para instalar projecto
+## Para instalar proyecto
 
 ### `npm start`
 
