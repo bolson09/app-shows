@@ -1,0 +1,288 @@
+:root {
+    --color-movie: #ffb703;
+    --color-title: #ffb703;
+    --color-misty-blue: #2F5061;
+    --color-coral: #E57F84;
+    --color-ivory: #F4EAE6;
+    --color-teal-green: #4297A0;
+    --color-theme: #F4EAE6;
+}
+
+* {
+    /*box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    background-color: var(--color-theme);
+}
+
+
+header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 200px;
+    background: linear-gradient(207.8deg, var(--color-misty-blue) 16.69%, var(--color-teal-green) 100%);
+}
+
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 50px;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-title)
+}
+
+/*
+ * Toolbar de ordenamiento
+ */
+
+.nav__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 30px;
+    background-color: var(--color-ivory);
+}
+  
+.short_button {
+    color: black;
+    font-size: 12px;
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    margin: 5px;
+    text-align: center;
+}
+
+.nav__bar .nav__bar_label {
+    margin: 5px;
+}
+
+/* 
+ * Card Lista de peliculas
+*/
+
+.card__container {
+    background: var(--color-ivory);
+    width: auto;
+}
+
+
+
+.card__img_wrap {
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.card__img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.card__body {
+    display: block;
+    margin-left: 35px;
+    line-height: 2rem;
+}
+
+.card__detail {
+    display: block;
+    width: 320px;
+    margin-bottom: 10px;
+    background-color: var(--color-ivory);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.favorit-button-movie {
+    display: flex;
+    padding: 2px;
+    border: 0;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 20px;
+    background-color: var(--color-movie);
+}
+
+/*
+ * Movie Detail
+ */
+
+.card__img_detail {
+    width: 118px;
+    border-radius: 5px;
+}
+
+.card__img_backdrop {
+    width: 320px;
+    filter: opacity(50%) blur(1px);
+}
+
+
+.card__body__detail {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 320px;
+}
+
+.card__body_info {
+    display: block;
+    margin-left: 10px;
+}
+
+.card__favorit_button_detail {
+    display: flex;
+    padding: 2px;
+    border: 0;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    background-color: var(--color-movie);
+}
+
+.card__footer_detail{
+    margin: 10px;
+    text-align: justify;
+}
+
+/*
+.card__favorit_button_detail {
+    position: absolute;
+    z-index: 10;
+    left: 8px;
+    bottom: 225px;
+}
+
+.card__title_detail {
+    position: absolute;
+    z-index: 20;
+    left: 110px;
+    bottom: 120px;
+}
+
+.card__footer_detail {
+    position: absolute;
+    z-index: 30;
+    left: 5px;
+    bottom: 1px;
+}
+
+.card__overview {
+    font-size: 8px;
+}
+
+.nav__back_detail {
+
+}
+*/
+
+.card__img:hover {
+    border: 1px solid #777;
+    
+}
+
+.card__title {
+    color: black;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?3ot2jt');
+    src:  url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?3ot2jt') format('truetype'),
+      url('../fonts/icomoon.woff?3ot2jt') format('woff'),
+      url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+
+  .icon-heart:before {
+    content: "\e903";
+    font-size: 20px;
+    
+  }
+
+  .icon-sort-alpha-asc:before {
+    content: "\e902";
+  }
+
+  .icon-sort-alpha-desc:before {
+    content: "\e901";
+  }
+
+  .favorit-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+    /*display: none; 
+    position: fixed;
+    z-index: 4;
+    */
+    line-height: 2em;
+    text-align: center;
+    
+    
+    background: black;
+    float: right;
+    top: 10px;
+    left:5px;
+  }
+
+  .favorit__button__color__green {
+      color: green;
+      transition: 0.3s;
+  }
+
+.favorit__button__color__white {
+    color: black;
+    transition: 0.3s;
+}
